@@ -1,0 +1,45 @@
+:root {
+  --mod-border-radius: 5px;
+  --mod-whitespace: 5px;
+}
+
+/* -- Tabs -- */
+#tabs-tabbar-container.top {
+  margin-bottom: var(--mod-whitespace);
+  border-width: 0;
+  box-shadow: none !important;
+
+  & .tab-strip > span + span .tab:not(.pinned) {
+    margin-left: var(--mod-whitespace);
+  }
+}
+
+.tab-position {
+  & .tab{
+    border-radius: var(--mod-border-radius) !important;
+
+    /* overwrite potential chrome mods */
+    &::after,
+    &::before {
+      display: none;
+    }
+
+    & .close {
+      background-color: transparent;
+      border-radius: 99rem;
+    }
+  }
+}
+
+/* -- Main Bar -- */
+.mainbar {
+  & > .toolbar-mainbar {
+    height: 50px;
+  }
+}
+.UrlBar-SearchField,
+.UrlBar-AddressField {
+  border-radius: var(--mod-border-radius);
+  height: auto;
+  padding: var(--mod-whitespace);
+}

@@ -15,7 +15,7 @@
 }
 
 .tab-position {
-  & .tab{
+  & .tab {
     border-radius: var(--mod-border-radius) !important;
 
     /* overwrite potential chrome mods */
@@ -37,9 +37,20 @@
     height: 50px;
   }
 }
+
 .UrlBar-SearchField,
 .UrlBar-AddressField {
   border-radius: var(--mod-border-radius);
   height: auto;
   padding: var(--mod-whitespace);
+
+  & .pageload-indicator {
+    border-radius: var(--mod-border-radius);
+    height: 100% !important;
+  }
 }
+
+.OmniDropdown {
+  top: 100% !important;
+}
+

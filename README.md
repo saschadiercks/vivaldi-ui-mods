@@ -10,3 +10,7 @@ A screenshot of Vivaldi with floating tabs and some additional whitespace to the
 
 For more informations head over to:<br/>
 https://forum.vivaldi.net/topic/37802/css-modifications-experimental-feature
+
+### Additionally applied theme in the screenshot
+Google Chrome Light Theme: https://themes.vivaldi.net/themes/ZQDJnnOjJLB <br/>
+by [Typeling 1578](https://themes.vivaldi.net/users/typeling1578)

@@ -2,7 +2,7 @@
 
 A screenshot of Vivaldi with floating tabs and some additional whitespace to the right.
 
-![Vivaldi with a slightly modded UI](/screenshots/brave.png)
+![Vivaldi with a slightly modded UI](/screenshots/floating-tabs-full.png)
 
 ## How to apply a UI-mod
 1. Visit `vivaldi://experiments` and tick the "Allow for CSS modifications" box.

@@ -1,6 +1,7 @@
 :root {
   --mod-border-radius: 5px;
   --mod-whitespace: 5px;
+  --mod-whitespace-tabbar-right: 15px;
 }
 
 /* -- Tabs -- */
@@ -8,6 +9,8 @@
   margin-bottom: var(--mod-whitespace);
   border-width: 0;
   box-shadow: none !important;
+
+  padding-right: var(--mod-whitespace-tabbar-right);
 
   & .tab-strip > span + span .tab:not(.pinned) {
     margin-left: var(--mod-whitespace);
@@ -55,6 +58,6 @@
 }
 
 .toolbar-mainbar .profile-popup {
-    margin-right: 15px;
+    margin-right: var(--mod-whitespace-tabbar-right);
 }
 

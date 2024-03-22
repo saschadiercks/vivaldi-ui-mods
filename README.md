@@ -7,6 +7,7 @@ A screenshot of Vivaldi with floating tabs and some additional whitespace to the
 ## How to apply the UI-mod
 1. Visit `vivaldi://experiments` and tick the "Allow for CSS modifications" box.
 2. Then go to: `vivaldi://settings/appearance/` and choose a folder to load from. (Place the new CSS there or choose the folder, where you cloned the repository to.)
+3. Restart Vivaldi
 
 For more informations head over to:<br/>
 https://forum.vivaldi.net/topic/37802/css-modifications-experimental-feature

@@ -1,71 +1,71 @@
 :root {
-  --mod-border-radius: 5px;
-  --mod-whitespace: 5px;
-  --mod-whitespace-tabbar-right: 15px;
+	--mod-border-radius: 5px;
+	--mod-whitespace: 5px;
+	--mod-whitespace-tabbar-right: 15px;
 }
 
 /* -- Tabs -- */
 #tabs-tabbar-container.top {
-  margin-bottom: var(--mod-whitespace);
-  border-width: 0;
-  box-shadow: none !important;
+	margin-bottom: var(--mod-whitespace);
+	border-width: 0;
+	box-shadow: none !important;
 
-  padding-right: var(--mod-whitespace-tabbar-right);
+	padding-right: var(--mod-whitespace-tabbar-right);
 
-  .tab-strip > span + span .tab:not(.pinned) {
-    margin-left: var(--mod-whitespace);
-  }
+	.tab-strip > span + span .tab:not(.pinned) {
+		margin-left: var(--mod-whitespace);
+	}
 }
 
 .tab-position {
-  .tab {
-    border-radius: var(--mod-border-radius) !important;
+	.tab {
+		border-radius: var(--mod-border-radius) !important;
 
-    /* overwrite potential chrome mods */
-    &::after,
-    &::before {
-      display: none;
-    }
+		/* overwrite potential chrome mods */
+		&::after,
+		&::before {
+			display: none;
+		}
 
-    .close {
-      background-color: transparent;
-      border-radius: 99rem;
-    }
-  }
+		.close {
+			background-color: transparent;
+			border-radius: 99rem;
+		}
+	}
 }
 
 /* -- tabs horizontal scrolling enabled --*/
 .horizontal-scrolling {
-  &.tab-strip {
-    padding-top: unset !important;
-    margin-top: unset !important;
-  }
+	&.tab-strip {
+		padding-top: unset !important;
+		margin-top: unset !important;
+	}
 }
 
 /* -- Main Bar -- */
 .mainbar {
-  & > .toolbar-mainbar {
-    height: 50px;
-  }
+	& > .toolbar-mainbar {
+		height: 50px;
+	}
 }
 
 .UrlBar-SearchField,
 .UrlBar-AddressField {
-  border-radius: var(--mod-border-radius);
-  height: auto;
-  padding: var(--mod-whitespace);
+	border-radius: var(--mod-border-radius);
+	height: auto;
+	padding: var(--mod-whitespace);
 
-  .pageload-indicator {
-    border-radius: var(--mod-border-radius);
-    height: 100% !important;
-  }
+	.pageload-indicator {
+		border-radius: var(--mod-border-radius);
+		height: 100% !important;
+	}
 }
 
 .OmniDropdown {
-  top: 100% !important;
+	top: 100% !important;
 }
 
 .toolbar-mainbar .profile-popup {
-    margin-right: var(--mod-whitespace-tabbar-right);
+		margin-right: var(--mod-whitespace-tabbar-right);
 }
 

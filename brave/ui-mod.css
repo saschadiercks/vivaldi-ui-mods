@@ -12,13 +12,13 @@
 
   padding-right: var(--mod-whitespace-tabbar-right);
 
-  & .tab-strip > span + span .tab:not(.pinned) {
+  .tab-strip > span + span .tab:not(.pinned) {
     margin-left: var(--mod-whitespace);
   }
 }
 
 .tab-position {
-  & .tab {
+  .tab {
     border-radius: var(--mod-border-radius) !important;
 
     /* overwrite potential chrome mods */
@@ -27,10 +27,18 @@
       display: none;
     }
 
-    & .close {
+    .close {
       background-color: transparent;
       border-radius: 99rem;
     }
+  }
+}
+
+/* -- tabs horizontal scrolling enabled --*/
+.horizontal-scrolling {
+  &.tab-strip {
+    padding-top: unset !important;
+    margin-top: unset !important;
   }
 }
 
@@ -47,7 +55,7 @@
   height: auto;
   padding: var(--mod-whitespace);
 
-  & .pageload-indicator {
+  .pageload-indicator {
     border-radius: var(--mod-border-radius);
     height: 100% !important;
   }

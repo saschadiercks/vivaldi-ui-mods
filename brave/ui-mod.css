@@ -46,7 +46,7 @@
 /* -- highlight tab with background audio -- */
 .tab.audio-on:not(.active) {
 	transition: all 1s ease;
-	color: var(--highlight-color);
+	color: var(--colorAccentFg, var(--highlight-color));
 	border: 1px solid currentColor;
 }
 

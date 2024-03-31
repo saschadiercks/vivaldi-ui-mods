@@ -16,6 +16,11 @@ https://forum.vivaldi.net/topic/37802/css-modifications-experimental-feature
 Google Chrome Light Theme: https://themes.vivaldi.net/themes/ZQDJnnOjJLB <br/>
 by [Typeling 1578](https://themes.vivaldi.net/users/typeling1578)
 
+### Highlighting of Background-audio in inactive tabs
+It also supports highlighting of background-audio, if the audio is not playing in the active tab:
+
+![Highlight tab in background thab play audio](/screenshots/vivaldi-highlight-background-audio.png)
+
 ## Custom Icon macOS
 There is also a custom icon for macOS, you can apply to Vivaldi, in cas you want a slightly cleaner lookin icon.
 The icon is taken from:

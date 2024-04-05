@@ -36,4 +36,7 @@ I then scale it up a bit, so that it matches the other macOS-Icons (in size and 
 
 If you want to remove that icon again, simply follow the preocedure from above, but instead of adding a new icon, just delete it.
 
+#### Note ####
+⚠️ You have to reapply the icon after each update of Vivaldi
+
 ![Flat Vivaldi Iocn](/custom-icon/vivaldi-icon-mac.png)

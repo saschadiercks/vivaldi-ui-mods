@@ -3,6 +3,7 @@
 	--mod-whitespace: 5px;
 	--mod-whitespace-tabbar-right: 15px;
 	--highlight-color: #c00;
+	--drop-shadow: 3px 3px 5px -1px rgba(0,0,0,.3);
 }
 
 /* -- Tabs -- */
@@ -20,6 +21,7 @@
 
 .tab-position {
 	.tab {
+		transition: all 1s ease;
 		border-radius: var(--mod-border-radius) !important;
 
 		/* overwrite potential chrome mods */
@@ -31,6 +33,10 @@
 		.close {
 			background-color: transparent;
 			border-radius: 99rem;
+		}
+
+		&.active {
+			box-shadow: var(--drop-shadow);
 		}
 	}
 }
@@ -48,6 +54,7 @@
 	transition: all 1s ease;
 	color: var(--colorAccentFg, var(--highlight-color));
 	border: 1px solid currentColor;
+	box-shadow: var(--drop-shadow);
 }
 
 /* -- Main Bar -- */

@@ -4,6 +4,7 @@
 	--mod-whitespace-tabbar-right: 15px;
 	--highlight-color: #c00;
 	--drop-shadow: 3px 3px 5px -1px rgba(0,0,0,.3);
+	--animation-speed: .3s;
 }
 
 /* -- Tabs -- */
@@ -21,7 +22,7 @@
 
 .tab-position {
 	.tab {
-		transition: all 1s ease;
+		transition: all var(--animation-speed) ease;
 		border-radius: var(--mod-border-radius) !important;
 
 		/* overwrite potential chrome mods */
@@ -35,7 +36,8 @@
 			border-radius: 99rem;
 		}
 
-		&.active {
+		&.active,
+		&:hover {
 			box-shadow: var(--drop-shadow);
 		}
 	}
@@ -51,7 +53,7 @@
 
 /* -- highlight tab with background audio -- */
 .tab.audio-on:not(.active) {
-	transition: all 1s ease;
+	transition: all var(--animation-speed) ease;
 	color: var(--colorAccentFg, var(--highlight-color));
 	border: 1px solid currentColor;
 	box-shadow: var(--drop-shadow);
@@ -81,7 +83,7 @@
 }
 
 .toolbar-mainbar .profile-popup {
-		margin-right: var(--mod-whitespace-tabbar-right);
+	margin-right: var(--mod-whitespace-tabbar-right);
 }
 
 /* -- Speed dial -- */

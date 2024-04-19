@@ -16,6 +16,10 @@ https://forum.vivaldi.net/topic/37802/css-modifications-experimental-feature
 Google Chrome Light Theme: https://themes.vivaldi.net/themes/ZQDJnnOjJLB <br/>
 by [Typeling 1578](https://themes.vivaldi.net/users/typeling1578)
 
+## Animated states of tabs
+There is a nice transition when activating a tab or hovering over it:
+![Highlight tab in background thab play audio](/screenshots/floating-tabs-hover-states.mp4)
+
 ### Highlighting of Background-audio in inactive tabs
 It also supports highlighting of background-audio, if the audio is not playing in the active tab:
 

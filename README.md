@@ -13,12 +13,12 @@ For more informations head over to:<br/>
 https://forum.vivaldi.net/topic/37802/css-modifications-experimental-feature
 
 ### Additionally applied theme in the screenshot
-Google Chrome Light Theme: https://themes.vivaldi.net/themes/ZQDJnnOjJLB <br/>
-by [Typeling 1578](https://themes.vivaldi.net/users/typeling1578)
+Modification of the Vivaldi light them. You can simply import this theme-file:
+[download theme](/themes/vivaldi-sdi-light.zip)
 
 ## Animated states of tabs
-There is a nice transition when activating a tab or hovering over it:
-![Highlight tab in background thab play audio](/screenshots/floating-tabs-hover-states.mp4)
+There is a nice transition when activating a tab or hovering over it and you will probably notice haveing a pointer cursor.
+![Highlight tab in background thab play audio](/screenshots/floating-tabs-hover-states.gif)
 
 ### Highlighting of Background-audio in inactive tabs
 It also supports highlighting of background-audio, if the audio is not playing in the active tab:

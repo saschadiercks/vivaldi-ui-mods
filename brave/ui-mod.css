@@ -1,6 +1,6 @@
 :root {
 	--mod-border-radius: 4px;
-	--mod-whitespace-x: 5px;
+	--mod-whitespace-x: 3px;
 	--mod-whitespace-y: 5px;
 	--mod-whitespace-tabbar-right: 15px;
 	--mod-highlight-color: #c00;
@@ -17,7 +17,7 @@
 	padding-right: var(--mod-whitespace-tabbar-right);
 
 	.tab-strip > span + span .tab:not(.pinned) {
-		margin-left: calc(var(--mod-whitespace-x) / 2);
+		margin-left: var(--mod-whitespace-x);
 	}
 }
 

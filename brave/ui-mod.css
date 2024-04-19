@@ -1,30 +1,33 @@
 :root {
-	--mod-border-radius: 5px;
-	--mod-whitespace: 5px;
+	--mod-border-radius: 4px;
+	--mod-whitespace-x: 5px;
+	--mod-whitespace-y: 5px;
 	--mod-whitespace-tabbar-right: 15px;
-	--highlight-color: #c00;
-	--drop-shadow: 3px 3px 5px -1px rgba(0,0,0,.3);
-	--animation-speed: .3s;
+	--mod-highlight-color: #c00;
+	--mod-drop-shadow: 3px 3px 5px -1px rgba(0,0,0,.3);
+	--mod-animation-speed: .3s;
 }
 
 /* -- Tabs -- */
 #tabs-tabbar-container.top {
-	margin-bottom: var(--mod-whitespace);
+	margin-bottom: var(--mod-whitespace-y);
 	border-width: 0;
 	box-shadow: none !important;
 
 	padding-right: var(--mod-whitespace-tabbar-right);
 
 	.tab-strip > span + span .tab:not(.pinned) {
-		margin-left: var(--mod-whitespace);
+		margin-left: calc(var(--mod-whitespace-x) / 2);
 	}
 }
 
 .tab-position {
 	.tab {
-		transition: all var(--animation-speed) ease;
+		transition: all var(--mod-animation-speed) ease;
 		border-radius: var(--mod-border-radius) !important;
-		cursor: pointer;
+		* {
+			cursor: pointer;
+		}
 
 		/* overwrite potential chrome mods */
 		&::after,
@@ -39,7 +42,7 @@
 
 		&.active,
 		&:hover {
-			box-shadow: var(--drop-shadow);
+			box-shadow: var(--mod-drop-shadow);
 		}
 	}
 }
@@ -54,10 +57,10 @@
 
 /* -- highlight tab with background audio -- */
 .tab.audio-on:not(.active) {
-	transition: all var(--animation-speed) ease;
-	color: var(--colorAccentFg, var(--highlight-color));
+	transition: all var(--mod-animation-speed) ease;
+	color: var(--colorAccentFg, var(--mod-highlight-color));
 	border: 1px solid currentColor;
-	box-shadow: var(--drop-shadow);
+	box-shadow: var(--mod-drop-shadow);
 }
 
 /* -- Main Bar -- */
@@ -71,7 +74,7 @@
 .UrlBar-AddressField {
 	border-radius: var(--mod-border-radius);
 	height: auto;
-	padding: var(--mod-whitespace);
+	padding: var(--mod-whitespace-x);
 
 	.pageload-indicator {
 		border-radius: var(--mod-border-radius);

@@ -24,6 +24,7 @@
 	.tab {
 		transition: all var(--animation-speed) ease;
 		border-radius: var(--mod-border-radius) !important;
+		cursor: pointer;
 
 		/* overwrite potential chrome mods */
 		&::after,

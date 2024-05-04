@@ -79,7 +79,6 @@
 .UrlBar-AddressField {
 	border-radius: var(--mod-border-radius);
 	height: auto;
-	padding: var(--mod-whitespace-x) 0;
 
 	.pageload-indicator {
 		border-radius: var(--mod-border-radius);

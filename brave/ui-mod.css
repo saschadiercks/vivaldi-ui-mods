@@ -6,6 +6,7 @@
 	--mod-highlight-color: #c00;
 	--mod-drop-shadow: 3px 3px 5px -1px rgba(0,0,0,.3);
 	--mod-animation-speed: .3s;
+	--mod-mainbar-height: 45px;
 }
 
 /* -- Tabs -- */
@@ -68,7 +69,9 @@
 /* -- Main Bar -- */
 .mainbar {
 	& > .toolbar-mainbar {
-		height: 50px;
+		align-items: stretch;
+		height: var(--mod-mainbar-height);
+		padding: var(--mod-whitespace-y);
 	}
 }
 
@@ -76,7 +79,7 @@
 .UrlBar-AddressField {
 	border-radius: var(--mod-border-radius);
 	height: auto;
-	padding: var(--mod-whitespace-x);
+	padding: var(--mod-whitespace-x) 0;
 
 	.pageload-indicator {
 		border-radius: var(--mod-border-radius);

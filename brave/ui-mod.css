@@ -86,6 +86,10 @@
 	}
 }
 
+.UrlField {
+	height: calc(var(--mod-mainbar-height) - (var(--mod-whitespace-y) * 2)) ;
+}
+
 .OmniDropdown {
 	top: 100% !important;
 }

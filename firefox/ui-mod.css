@@ -14,6 +14,11 @@
 		}
 	}
 
+	/* remove margin from workspace selector */
+	.toolbar-tabbar-before:has(.workspace-popup) {
+		margin-top: 0;
+	}
+
 	/* lower opacity of background tabs */
 	.tab:not(.active, :hover) {
 		opacity: .5;

@@ -1,0 +1,26 @@
+:root {
+	--mod-tab-height: 38px;
+}
+
+/* -- TabS -- */
+#tabs-tabbar-container.top {
+	/* increase tab height */
+	height: var(--mod-tab-height) !important;
+	& .tab-wrapper {
+		align-items: stretch;
+
+		& .tab {
+			justify-content: center;
+		}
+	}
+
+	/* lower opacity of background tabs */
+	.tab:not(.active, :hover) {
+		opacity: .5;
+	}
+
+	/* cursor on all tabs */
+	.tab * {
+		cursor: pointer;
+	}
+}

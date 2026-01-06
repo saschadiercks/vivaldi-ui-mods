@@ -1,31 +1,17 @@
-:root {
-	--mod-tab-height: 38px;
+/* -- Tabs -- */
+/* cursor on all tabs */
+.tab * {
+	cursor: pointer;
 }
 
-/* -- TabS -- */
+/* lower opacity of background tabs */
 #tabs-tabbar-container.top {
-	/* increase tab height */
-	height: var(--mod-tab-height) !important;
-	& .tab-wrapper {
-		align-items: stretch;
-
-		& .tab {
-			justify-content: center;
-		}
-	}
-
-	/* remove margin from workspace selector */
-	.toolbar-tabbar-before:has(.workspace-popup) {
-		margin-top: 0;
-	}
-
-	/* lower opacity of background tabs */
 	.tab:not(.active, :hover) {
 		opacity: .5;
 	}
+}
 
-	/* cursor on all tabs */
-	.tab * {
-		cursor: pointer;
-	}
+/* prevent blurry text in tabs on zoom */
+.tab-position {
+	will-change: unset !important;
 }

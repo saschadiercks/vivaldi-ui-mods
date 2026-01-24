@@ -12,6 +12,11 @@
 		&:not(.active, :hover, .audio-on) {
 			opacity: .3;
 		}
+
+		/* make close button more subtle */
+		& .close {
+			background-color: transparent !important;
+		}
 	}
 }
 

@@ -20,7 +20,7 @@
   }
 }
 
-/* overwrite bookmark button color */
+/* overwrite bookmark button color if bookmark is saved */
 .BookmarkButton .button-on path {
   fill: red !important;
 }

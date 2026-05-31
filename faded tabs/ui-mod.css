@@ -24,3 +24,18 @@
 .tab-position {
 	will-change: unset !important;
 }
+
+/* remove padding when autohide is on */
+/*.auto-hide {*/
+/*	#tabs-tabbar-container.top {*/
+/*		padding-top: 0 !important;*/
+/*	}*/
+/*}*/
+
+/* add border, when autohide is off */
+.auto-hide-off {
+	#header {
+		border-bottom: 1px solid var(--colorFg);
+	}
+
+}

@@ -41,9 +41,9 @@
 /*}*/
 
 /* add border, when autohide is off */
-.auto-hide-off {
-  #header {
-    border-bottom: 1px solid var(--colorFg);
-  }
+/*.auto-hide-off {*/
+/*  #header {*/
+/*    border-bottom: 1px solid #dfdfdf;*/
+/*  }*/
 
 }

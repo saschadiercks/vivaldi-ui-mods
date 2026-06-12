@@ -10,7 +10,7 @@
 		transition: opacity .3s ease;
 
 		&:not(.active, :hover, .audio-on) {
-			opacity: .3;
+			opacity: .5;
 		}
 
 		/* make close button more subtle */

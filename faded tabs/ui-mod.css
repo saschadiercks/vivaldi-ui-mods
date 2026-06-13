@@ -25,6 +25,11 @@
 	will-change: unset !important;
 }
 
+/* Match border-radius from macOS */
+.mac #webpage-stack {
+	border-radius: 1rem;
+}
+
 /* remove padding when autohide is on */
 /*.auto-hide {*/
 /*	#tabs-tabbar-container.top {*/

@@ -25,10 +25,15 @@
 	will-change: unset !important;
 }
 
-/* Match border-radius from macOS */
-.mac #webpage-stack {
-	border-radius: 1rem;
+/* Hide Workspace Icon */
+.workspace-popup button .button-icon {
+	display: none !important;
 }
+
+/* Match border-radius from macOS */
+/*.mac #webpage-stack {*/
+/*	border-radius: 1rem;*/
+/*}*/
 
 /* remove padding when autohide is on */
 /*.auto-hide {*/

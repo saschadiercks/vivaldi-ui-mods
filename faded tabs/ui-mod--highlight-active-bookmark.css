@@ -4,6 +4,12 @@
   cursor: pointer;
 }
 
+/* prevent blurry text in tabs on zoom */
+.tab-position {
+  will-change: unset !important;
+}
+
+
 /* lower opacity of background tabs */
 #tabs-tabbar-container.top {
   :is(.tab) {
@@ -20,22 +26,31 @@
   }
 }
 
+/* Customise workspace icon */
+.tabs-top {
+  .button-toolbar.workspace-popup {
+    /* decrease whitespace on workspace-button */
+    &.tabbar-workspace-button {
+      margin-left: 0 !important;
+    }
+    .ToolbarButton-Button {
+      min-width: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Hide the dropdown icon */
+    .button-toolbar-menu-indicator {
+      display: none !important;
+    }
+  }
+}
+
 /* overwrite bookmark button color if bookmark is saved */
 /*  delete the next line, if you do not want the bookmark-button inherit */
 /*  the accentColor but use red instead */
 --bookmarkButtonSavedColor: var(--colorTabBar);
 .BookmarkButton .button-on path {
   fill: var(--bookmarkButtonSavedColor, red) !important;
-}
-
-/* prevent blurry text in tabs on zoom */
-.tab-position {
-  will-change: unset !important;
-}
-
-/* Hide Workspace Icon */
-.workspace-popup button .button-icon {
-  display: none !important;
 }
 
 /* Match border-radius from macOS */

@@ -4,6 +4,12 @@
 	cursor: pointer;
 }
 
+/* prevent blurry text in tabs on zoom */
+.tab-position {
+	will-change: unset !important;
+}
+
+
 /* lower opacity of background tabs */
 #tabs-tabbar-container.top {
 	:is(.tab) {
@@ -20,14 +26,23 @@
 	}
 }
 
-/* prevent blurry text in tabs on zoom */
-.tab-position {
-	will-change: unset !important;
-}
+/* Customise workspace icon */
+.tabs-top {
+	.button-toolbar.workspace-popup {
+		/* decrease whitespace on workspace-button */
+		&.tabbar-workspace-button {
+			margin-left: 0 !important;
+		}
+		.ToolbarButton-Button {
+			min-width: 0 !important;
+			padding: 0 !important;
+		}
 
-/* Hide Workspace Icon */
-.workspace-popup button .button-icon {
-	display: none !important;
+		/* Hide the dropdown icon */
+		.button-toolbar-menu-indicator {
+			display: none !important;
+		}
+	}
 }
 
 /* Match border-radius from macOS */
